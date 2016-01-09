@@ -80,7 +80,7 @@ int main(int argc, char** argv)
 	if (!argv[1]||!argv[2]||!argv[3]||!argv[4])
 	{
 		printf("Args: \"files\" \"steamid64\" \"sessionid\" \"steamlogin\"\n");
-		printf("Ex: \"C:/dickpics/*.gif\" \"776561198162962704\" \"7ba24g35f078968b1aaa78da19\" \"76561198162962704%7C%KD25AD16KK2GH7A482DKA6DK4AD2KG\"\n");
+		printf("Ex: \"C:/dickpics/*.gif\" \"776561198162962704\" \"7ba24g35f078968b1aaa78da19\" \"76561198162962704KD25AD16KK2GH7A482DKA6DK4AD2KG\"\n");
 		getchar();
 		return 0;
 	}
