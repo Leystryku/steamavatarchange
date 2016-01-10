@@ -77,6 +77,7 @@ void addpostfile(const char*postfile, int num)
 
 int main(int argc, char** argv)
 {
+
 	curl_global_init(CURL_GLOBAL_ALL);
 
 	if (!argv[1]||!argv[2]||!argv[3]||!argv[4])
@@ -86,6 +87,15 @@ int main(int argc, char** argv)
 		getchar();
 		return 0;
 	}
+
+	HWND previousinstance = FindWindow(0, "Steam Avatar Changer");
+
+	if (previousinstance)
+	{
+		ExitProcess(0);
+	}
+
+	SetWindowText(GetForegroundWindow(), "Steam Avatar Changer");
 
 	strcpy(steamid64, argv[2]);
 	strcpy(sessionid, argv[3]);
