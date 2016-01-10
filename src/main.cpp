@@ -3,6 +3,8 @@
 #include "defines.h"
 #include "curl/curl.h"
 
+#include <math.h>
+
 char steamid64[250];
 char sessionid[250];
 char steamlogin[250];
@@ -138,9 +140,13 @@ int main(int argc, char** argv)
 
 
 	int i = 0;
+	int lasttime = 0;
 
 	while (true)
 	{
+
+
+
 		if (!files[i])
 		{
 			i = 0;
@@ -152,7 +158,7 @@ int main(int argc, char** argv)
 
 
 		i++;
-
+		Sleep(500);
 
 	}
 
