@@ -156,6 +156,7 @@ int main(int argc, char** argv)
 	{
 
 
+		Sleep(20000);
 
 		if (!files[i])
 		{
@@ -168,7 +169,6 @@ int main(int argc, char** argv)
 
 
 		i++;
-		Sleep(500);
 
 	}
 
